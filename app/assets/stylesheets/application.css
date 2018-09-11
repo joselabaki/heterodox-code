@@ -18,10 +18,18 @@
      background-color: black;
  }
 
+ @font-face {
+    font-family: 'Untitled Sans';
+    src: url('fonts/UntitledSansWeb-Regular_0.ttf');
+    
+
+}
+
  .navigation {
      margin-top: 80px;
      color: #999999;
-    
+     font-family: 'Untitled Sans';
+
  }
 
  .navigation li {
