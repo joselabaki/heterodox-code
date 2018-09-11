@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+     background-color: black;
+ }
+
+ .navigation {
+     margin-top: 80px;
+     color: #999999;
+    
+ }
+
+ .navigation li {
+     list-style-type: none;
+     display: block ;
+}
+
+#heterodox-logo {
+    width: 383px;
+}
+ 
