@@ -9,7 +9,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
      end
 
   def create
@@ -23,7 +23,7 @@ class ProjectsController < ApplicationController
   end
    
   def update
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
    
     if @project.update(project_params)
       redirect_to @project
@@ -34,7 +34,11 @@ class ProjectsController < ApplicationController
  
  
   def show
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
+
+    # if request.path != projects_path(@project)
+    #   redirect_to @project, status: :moved_permanently 
+    # end
   end
 
   def destroy
