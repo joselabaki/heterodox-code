@@ -19,16 +19,22 @@
  }
 
  @font-face {
-    font-family: 'Untitled Sans';
+    font-family: 'Sans';
     src:font-url('UntitledSansWeb-Regular_0.ttf');
-    
+    font-family: 'Serif';
+    src:font-url('UntitledSerifWeb-Regular_0.otf');
+    font-family: 'Serif Italic';
+    src:font-url('Renamed_0.ttf');
+
+
 
 }
 
  .navigation {
      margin-top: 80px;
      color: #999999;
-     font-family: 'Untitled Sans';
+     font-family: 'Sans';
+     font-size: 1em;
 
  }
 
