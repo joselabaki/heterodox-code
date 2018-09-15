@@ -71,6 +71,5 @@ gem 'friendly_id', '~> 5.2.0'
 gem 'devise'
 
 gem 'globalize', git: 'https://github.com/globalize/globalize'
-
-
-
+gem "mini_magick"
+gem 'carrierwave', '~> 1.0'

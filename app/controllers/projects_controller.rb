@@ -16,7 +16,7 @@ before_action :authenticate_user! , except: [:show , :index]
 
   def create
     @project = Project.new(project_params)
-   
+
     if @project.save
     redirect_to @project
     else
@@ -53,6 +53,6 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :text)
+  params.require(:project).permit(:title, :text, {images: []} )
 end
 

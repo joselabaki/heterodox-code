@@ -25,7 +25,13 @@
         <%= form.label :text %><br>
         <%= form.text_area :text %>
       </p>
-     
+
+      <%= form.label :images %><br>
+      <%= form.file_field :images, multiple: true %>
+
+
+
+
       <p>
         <%= form.submit %>
       </p>
