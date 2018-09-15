@@ -12,6 +12,7 @@
 
   <body>
   
+  
   <div class ="header">
     <%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %>
       <div class="nav">
@@ -25,6 +26,8 @@
       </div>
   </div>
   
+  <%= render 'layouts/alerts' %>
+
     <%= yield %>
   </body>
 </html>

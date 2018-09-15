@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+before_action :authenticate_user! , except: [:show , :index]
+
 
   def index
     @projects = Project.all
@@ -53,3 +55,4 @@ private
 def project_params
   params.require(:project).permit(:title, :text)
 end
+

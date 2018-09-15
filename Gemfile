@@ -67,3 +67,5 @@ gem 'inline_svg'
 #Friendly ids
 gem 'friendly_id', '~> 5.2.0' 
 
+#Authentication
+gem 'devise'
