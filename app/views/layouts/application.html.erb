@@ -11,20 +11,19 @@
 
   <body>
   
-  <navigation>
-  <div class="navigation">
-  <ul>
-  <li> <%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %></li>
-  <li>ABOUT</li>
-  <li>WORKS</li>
-  <li>CONTACT</li>
-  <li>VERSIONS</li>
-  <li>ENG</li>
-
-  </ul>
+  <div class ="header">
+    <%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %>
+      <div class="nav">
+      <ul>
+          <li>about</li>
+          <li>works</li>
+          <li>contact</li>
+          <li>versions</li>
+          <li>eng</li>
+        </ul>
+      </div>
   </div>
   
-  </navigation>
     <%= yield %>
   </body>
 </html>
