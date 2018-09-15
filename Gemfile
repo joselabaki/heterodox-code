@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Add inline svg
 gem 'inline_svg'
 
+#Friendly ids
+gem 'friendly_id', '~> 5.2.0' 
+

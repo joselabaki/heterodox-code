@@ -21,9 +21,14 @@
  }
 
  @font-face {
-    font-family: 'Untitled Sans';
+    font-family: 'Sans';
     src:font-url('UntitledSansWeb-Regular_0.ttf');
-    
+    font-family: 'Serif';
+    src:font-url('UntitledSerifWeb-Regular_0.otf');
+    font-family: 'Serif Italic';
+    src:font-url('Renamed_0.ttf');
+
+
 
 }
 
@@ -40,6 +45,7 @@
 
  .nav {
      ul {margin: 0; padding: 0; 
+        font-family: 'Sans'
 
 
 
@@ -48,7 +54,7 @@
         color: rgb(153, 153, 153);
         list-style-type: none;
         text-transform: uppercase;
-        font-family: "Untitled Sans";
+        font-family: "Sans";
         font-size: 1em;
         grid-column: 8;
         };
