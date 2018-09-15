@@ -35,10 +35,6 @@ class ProjectsController < ApplicationController
  
   def show
     @project = Project.friendly.find(params[:id])
-
-    # if request.path != projects_path(@project)
-    #   redirect_to @project, status: :moved_permanently 
-    # end
   end
 
   def destroy
