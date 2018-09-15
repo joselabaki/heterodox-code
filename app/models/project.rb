@@ -9,5 +9,7 @@ def should_generate_new_friendly_id?
 
     validates :title, presence: true
 
+    translates :title , :text
+
   
 end

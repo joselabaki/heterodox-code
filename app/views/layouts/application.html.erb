@@ -21,7 +21,8 @@
           <li>works</li>
           <li>contact</li>
           <li>versions</li>
-          <li>eng</li>
+          <%= link_to_unless_current "ENG" , locale: "en" %> |
+           <%= link_to_unless_current "FRA" , locale: "fra" %>
         </ul>
       </div>
   </div>

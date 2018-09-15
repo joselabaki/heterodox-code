@@ -18,6 +18,6 @@ module HeterodoxCode
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
-    
+    config.i18n.fallbacks = true
   end
 end

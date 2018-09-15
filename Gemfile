@@ -69,3 +69,8 @@ gem 'friendly_id', '~> 5.2.0'
 
 #Authentication
 gem 'devise'
+
+gem 'globalize', git: 'https://github.com/globalize/globalize'
+
+
+

@@ -40,7 +40,7 @@ before_action :authenticate_user! , except: [:show , :index]
   end
 
   def destroy
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
     @project.destroy
    
     redirect_to projects_path
