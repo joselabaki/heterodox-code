@@ -21,15 +21,21 @@
  }
 
  @font-face {
-    font-family: 'Sans';
-    src:font-url('UntitledSansWeb-Regular_0.ttf');
-    font-family: 'Serif';
-    src:font-url('UntitledSerifWeb-Regular_0.otf');
-    font-family: 'Serif Italic';
-    src:font-url('Renamed_0.ttf');
+    font-family: 'Untitled Sans';
+    src:font-url('UntitledSansWeb.ttf');
 
+    // font-family: 'Serif Italic';
+    // src:font-url('Renamed_0.ttf');
+}
 
+@font-face {
+    font-family: 'Untitled Serif';
+    src:font-url('UntitledSerifWeb.otf');
+}
 
+@font-face {
+  font-family: 'Serif Italic';
+    src:font-url('Renamed.ttf');
 }
 
 .header {
@@ -45,16 +51,13 @@
 
  .nav {
      ul {margin: 0; padding: 0; 
-        font-family: 'Sans'
-
-
 
 }
      li {
         color: rgb(153, 153, 153);
         list-style-type: none;
         text-transform: uppercase;
-        font-family: "Sans";
+        font-family: "Serif Italic";
         font-size: 1em;
         grid-column: 8;
         };
