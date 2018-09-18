@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'en/thanks' => 'thanks#index'
-  scope ":locale" , locale: /#{I18n.available_locales.join("|")}/   do
+  scope "(:locale)" , locale: /#{I18n.available_locales.join("|")}/   do
+  get '/thanks' => 'thanks#index'
 
   devise_for :users
   get 'backdoor/cms'
@@ -8,13 +8,14 @@ Rails.application.routes.draw do
   get 'static/contact'
 
   resources :projects
-  root 'projects#index'
+  get '/:locale' => 'projects#index'
+  root  'projects#index'
   get 'leads/index'
 
   resources :leads
 end
 
-get '*path', to: redirect("/#{I18n.default_locale}/%{path}")
-get '', to: redirect("/#{I18n.default_locale}")
+# get '*path', to: redirect("/#{I18n.default_locale}/%{path}")
+# get '', to: redirect("/#{I18n.default_locale}")
 
 end
