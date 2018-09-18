@@ -15,4 +15,8 @@
 <% @project.images.each do |image| %>
   <%= image_tag (image.url)%>
   <%end%>
+
+ 
+
+
 <%= link_to 'Edit', edit_project_path(@project) %>
