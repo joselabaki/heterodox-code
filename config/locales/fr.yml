@@ -2,3 +2,8 @@ fr:
   projects:
     index:
       title: "Projets"
+
+  nav:
+    home: "Accueil" 
+    about: "À Propos"
+    projects: "Projets" 
