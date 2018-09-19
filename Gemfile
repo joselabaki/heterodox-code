@@ -74,3 +74,4 @@ gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem "mini_magick"
 gem 'carrierwave', '~> 1.0'
 gem 'mailchimp-api', require: 'mailchimp'
+gem 'browser'
