@@ -16,6 +16,22 @@
 
  @import 'variables';
 
+ @media screen and (min-width: 1400px) {
+    .main-container {
+      width: 1370px;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .main-container {
+      width: 1570px;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .main-container {
+      width: 1870px;
+    }
+  }
+
 
  body{
      background-color: black;
@@ -42,7 +58,7 @@
 table {display:none;}
 
 .main-container{
-    width:1150px;
+    width:1200px;
     margin: 0 auto;
 }
 .navigation{
