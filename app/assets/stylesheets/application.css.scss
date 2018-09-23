@@ -81,11 +81,12 @@ table {display:none;}
         grid-gap: 20px; 
     }
     
-    #versions-arrow{width:10px; display:inline;}
-    #versions-odin{position: absolute;}
+    #versions-arrow{width:10px;margin-left: 5px;}
+    #versions-odin{position: absolute;display:none;}
     .languages{display: block;
-    .fr{position: absolute;}
-    #lang-arrow{width:10px; display:inline; margin-left: 5px; cursor:pointer;#Arrow_6_{fill:currentColor;}}
+    .fr{position: absolute;display:none;}
+    .fr-dis{position: absolute;display:block;}
+    #lang-arrow{width:10px;margin-left: 5px; cursor:pointer;#Arrow_6_{fill:currentColor;}}
     }
 
 }

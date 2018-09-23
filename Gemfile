@@ -75,3 +75,4 @@ gem "mini_magick"
 gem 'carrierwave', '~> 1.0'
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'browser'
+gem 'jquery-rails'

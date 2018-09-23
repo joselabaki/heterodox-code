@@ -8,14 +8,10 @@ Rails.application.routes.draw do
   get 'static/contact'
 
   resources :projects
-  get '/:locale' => 'projects#index'
   root  'projects#index'
   get 'leads/index'
 
   resources :leads
 end
-
-# get '*path', to: redirect("/#{I18n.default_locale}/%{path}")
-# get '', to: redirect("/#{I18n.default_locale}")
 
 end
