@@ -19,21 +19,19 @@
           <div class="about"><%= link_to_unless_current t("nav.about") , static_about_path %></div>
           <div class="projects"><%= link_to_unless_current t("nav.projects"), projects_path %></div>
           <div class="contact"><%= link_to_unless_current "contact" , static_contact_path %></div>
-         
-          <div class="versions-button">
-            <div><%= link_to_unless_current "versions", root_path %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
-            <div id="versions-odin">ODIN</div>
-          </div>
-          
           <div class="languages">
-            <div class="eng"><%= link_to "eng" , locale: "en" %> <%= inline_svg "arrow.svg"  , id: "lang-arrow" %> </div> 
-            <div class="fr"><%= link_to "fr" , locale: "fr" %> </div>
+            <%= link_to_unless_current "eng" , locale: "en" %> | <%= link_to_unless_current "fr" , locale: "fr" %> 
           </div>
+          <div class="versions-button">
+          <div><%= link_to_unless_current "versions", root_path %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
+          <div id="versions-odin">ODIN</div>
+        </div>
           </div>
   
   <%= render 'layouts/alerts' %>
-
+  <div class="content"
     <%= yield %>
+    </div>
     </div>
   </body>
 </html>

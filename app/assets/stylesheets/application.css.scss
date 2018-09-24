@@ -32,12 +32,17 @@
     }
   }
 
+html{
+  cursor: url('cursor-stroke.png'), pointer;
+  a {cursor: url('cursor-fill.png'),pointer;}
+}
 
  body{
      background-color: black;
      margin:0;
      padding: 0;
- }
+  
+    }
 
  @font-face {
     font-family: 'Untitled Sans';
@@ -55,7 +60,6 @@
     src:font-url('Renamed.ttf');
 }
 
-table {display:none;}
 
 .main-container{
     width:1200px;
@@ -70,6 +74,9 @@ table {display:none;}
     align-items: end;
     list-style-type: none;text-transform: uppercase;
     margin-top: 50px; 
+    // -webkit-box-shadow: -1px 25px 65px -26px rgba(255,255,255,1);
+    // -moz-box-shadow: -1px 25px 65px -26px rgba(255,255,255,1);
+    // box-shadow: 0px 25px 15px -15px rgba(255,255,255,1);
     a{text-decoration: none; color:$hx-grey;}
     
     #heterodox-logo{width:350px;};
@@ -83,10 +90,5 @@ table {display:none;}
     
     #versions-arrow{width:10px;margin-left: 5px;}
     #versions-odin{position: absolute;display:none;}
-    .languages{display: block;
-    .fr{position: absolute;display:none;}
-    .fr-dis{position: absolute;display:block;}
-    #lang-arrow{width:10px;margin-left: 5px; cursor:pointer;#Arrow_6_{fill:currentColor;}}
-    }
-
+    
 }
