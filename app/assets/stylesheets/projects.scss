@@ -3,15 +3,40 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 ////////////////////index////////////////
-
-.p-index{margin-top: 70px;
-display: grid;
-grid-template-columns: 1fr;
+.content{
+    margin-top: 100px;
+  
+}
+.p-index{
+margin-top: 80px;
 }
 
 .p-title{
     font-family: "Untitled Serif";
     text-transform: capitalize;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: white;
 }
+
+.p-text{
+    margin-top: 10px;
+    font-family: "Untitled Sans";
+    text-transform: none;
+    color: white;
+    font-size: .9em;
+    width: 500px;
+}
+
+.p-button{ 
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    a {
+    text-decoration: none;
+    font-family: "Untitled Sans";
+    text-transform: none;
+    color: white;
+    font-size: .9em;
+    border: .5px solid white;
+    background-color: black;
+    padding: 8px;
+}}
