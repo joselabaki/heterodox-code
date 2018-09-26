@@ -3,12 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 ////////////////////index////////////////
-.content{
+
+
+.all-projects {
     margin-top: 100px;
-  
+
 }
 .p-index{
-margin-top: 80px;
+margin-top: 40px;
 }
 
 .p-title{
@@ -16,7 +18,11 @@ margin-top: 80px;
     text-transform: capitalize;
     font-size: 1.3em;
     color: white;
+    cursor:url(new-fill.png) , pointer;
+  
 }
+
+
 
 .p-text{
     margin-top: 10px;
@@ -40,3 +46,11 @@ margin-top: 80px;
     background-color: black;
     padding: 8px;
 }}
+
+.hidden{
+    display:none;
+}
+
+.p-toggle{
+    padding-bottom:5px;
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HeterodoxCode</title>
-    <%= csrf_meta_tags %>
+  <title>Heterodox - <%= yield(:title) %> </title>
+  <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,22 +16,19 @@
         <div class="logo"><%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %></div>
             <div class="nav-items">
           <div class="home"><%= link_to_unless_current t("nav.home"), root_path %></div>
-          <div class="about"><%= link_to_unless_current t("nav.about") , static_about_path %></div>
+          <div class="about"><%= link_to_unless_current t("nav.about") , about_path %></div>
           <div class="projects"><%= link_to_unless_current t("nav.projects"), projects_path %></div>
-          <div class="contact"><%= link_to_unless_current "contact" , static_contact_path %></div>
+          <div class="contact"><%= link_to_unless_current "contact" , contact_path %></div>
           <div class="languages">
             <%= link_to_unless_current "eng" , locale: "en" %> | <%= link_to_unless_current "fr" , locale: "fr" %> 
           </div>
           <div class="versions-button">
-          <div><%= link_to_unless_current "versions", root_path %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
-          <div id="versions-odin">ODIN</div>
+          <div><%= link_to_unless_current "versions", cronos_path %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
         </div>
           </div>
   </div>
   <%= render 'layouts/alerts' %>
-  <div class="content"
     <%= yield %>
-    </div>
     </div>
   </body>
 </html>

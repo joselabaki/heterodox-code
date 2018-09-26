@@ -31,12 +31,19 @@
       width: 1970px;
     }
   }
+   
+ *{
+  cursor: url(new-stroke.png), default;
+  a{cursor:url(new-fill.png) , pointer;
+  }
+ } 
 
-
+ html{height: 100%;}
  body{
      background-color: black;
      margin:0;
      padding: 0;
+    
   
     }
 
@@ -70,13 +77,11 @@
     align-items: end;
     list-style-type: none;text-transform: uppercase;
     margin-top: 50px; 
-    // -webkit-box-shadow: -1px 25px 65px -26px rgba(255,255,255,1);
-    // -moz-box-shadow: -1px 25px 65px -26px rgba(255,255,255,1);
-    // box-shadow: 0px 25px 15px -15px rgba(255,255,255,1);
+    
     a{text-decoration: none; color:$hx-grey;}
     
     #heterodox-logo{width:350px;};
-    a:visited{color:$hx-grey;}
+
     .nav-items{
         justify-self: end;
         display: grid;
