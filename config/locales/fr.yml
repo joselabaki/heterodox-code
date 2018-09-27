@@ -7,4 +7,19 @@ fr:
     home: "Accueil"
     about: "À Propos"
     projects: "Projets"
+  contact:
+    designer: "le designer"
+    concept: "le concept"
+    concept_html: |
+      Nulla ac nisl lacus. <br>
+      Duis faucibus felis orci, nec pellentesque dolor sollicitudin eu. <br>
+      Nullam nec massa quis tortor suscipit malesuada et congue nisl. <br>
+      Suspendisse lobortis mollis elit, nec viverra mi malesuada nec. <br>
+      Nunc convallis neque id augue porttitor, at scelerisque felis sagittis. <br>
+      Nulla pulvinar, tortor eu gravida consectetur, nunc neque semper urna, <br>
+      sed accumsan risus elit vitae tellus. Etiam ut nibh velit. <br>
+      In eget sollicitudin ipsum, vitae porttitor massa. Aenean pretium porttitor nunc, <br>
+      a lobortis mi iaculis non. Maecenas facilisis ornare ante aliquet viverra.<br>
+
+
 

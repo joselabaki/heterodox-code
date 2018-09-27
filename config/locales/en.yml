@@ -7,4 +7,12 @@ en:
     home: "Home"
     about: "About"
     projects: "Projects"
-
+  contact:
+    designer: "the designer"
+    concept: "the concept"
+    concept_html: 
+      Vivamus dapibus eleifend orci suscipit scelerisque. <br>
+      Fusce vitae purus et lacus lacinia posuere in id nisi. Nullam maximus scelerisque posuere.<br>
+      Maecenas quis luctus elit. Donec ipsum quam, consequat ac enim at, convallis iaculis dui. <br>
+      Phasellus porttitor tellus vel ante varius commodo. Fusce eu molestie velit. <br>
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
