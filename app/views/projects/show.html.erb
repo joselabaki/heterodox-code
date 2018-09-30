@@ -4,13 +4,23 @@
 <div class ="show-title" ><%= raw @project.title.gsub(" ", "<br>") + "."%></div>
 <div class="show-body">
 <%=@project.text.html_safe %>
-
 <% @project.images.each do |i| %>
 
 <div class="<%= i.file.filename.parameterize%> hidden"><%= image_tag (i.url)%></div>  
 <div class="<%=i.file.filename.parameterize%>-frame"></div>
 <%end%>
 </div>
+</div>
+
+<div class="add-links">
+
+    <div class="download">
+        <p id="download"><%= t("add-links.download")%></p><%= inline_svg "arrow.svg" , id: "download-arrow" %>
+    </div>
+    <div class="subscribe">
+    <p id="subscribe"><%= t("add-links.subscribe")%> </p><%= inline_svg "arrow.svg" , id: "subscribe-arrow" %>
+    </div>
+
 </div>
 
 <% if current_user && current_user.admin? %>
@@ -20,10 +30,10 @@
 
 <div class= "inner-nav">
         <div class="prev">
-                    <%# if @project.previous%><%= link_to @project.previous do  %>
+                    <% if @project.previous%><%= link_to @project.previous do  %>
                     <p class="prev-link"><%= t("inner.prev")%></p>
                     <%= inline_svg "Next-arrow.svg" , id: "prev-arrow"%>
-                    <%# end%>
+                    <% end%>
                 <%end%>
         </div>
         <div class="next">

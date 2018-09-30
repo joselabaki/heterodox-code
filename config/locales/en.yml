@@ -24,3 +24,6 @@ en:
   inner:
     prev: "Previous"
     next: "Next"
+  add-links:
+    download: "download as pdf"
+    subscribe: "subscribe"

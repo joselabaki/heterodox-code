@@ -29,3 +29,7 @@ fr:
     prev: "Précédent"
     next: "Suivant"
 
+  add-links:
+    download: "télécharger en pdf"
+    subscribe: "s' abonner"
+

@@ -93,6 +93,7 @@ margin-top: 40px;
 .inner-nav{
     display:grid;
     grid-template-columns: 50% 50%;
+    margin-top:100px;
 }
 .next{
     justify-self: end;
@@ -131,6 +132,13 @@ margin-top: 40px;
 
 }
 
+.add-links{
+    margin-top: 40px;
+    cursor:url('new-fill.png') , pointer;
+}
+#download-arrow , #subscribe-arrow{width:10px; margin-left: 5px; #Arrow_6_{fill:white;}}
+#download , #subscribe {color: white;font-family: "Untitled Sans"; font-size: 1.1em;margin:0px;margin-bottom: 15px;}
+.download , .subscribe{display: flex; align-items: baseline;}
 /////////////////////////////////////ADD NEW CSS/////////
 
 .test-jpeg-frame
