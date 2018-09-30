@@ -80,7 +80,7 @@
     
     a{text-decoration: none; color:$hx-grey;}
     
-    #heterodox-logo{width:350px;};
+    #heterodox-logo{width:350px;cursor:url(new-fill.png) , pointer;};
 
     .nav-items{
         justify-self: end;
@@ -94,3 +94,19 @@
     
 }
 
+.subtitle{
+  position: absolute;
+  background-color: black;
+  padding-right: 100px;
+ .explain{margin-bottom: 10px; margin-top: 15px;}
+  text-transform: none;
+  color: black;
+  .white-bg{
+    background-color: white;
+    display: inline-block;
+    margin: 0px;
+    padding: 1px;
+      .latin{font-family: "Serif Italic"; font-size: 1.1em;}
+      .serif{font-family: "Untitled Serif"; font-size: 1.2em;}
+  }
+}

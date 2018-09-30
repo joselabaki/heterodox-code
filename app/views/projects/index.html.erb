@@ -6,8 +6,12 @@
     <div class="p-index">
       <div class ="p-title <%= project.title.parameterize %>" > <%= project.title %></div><hr>
         <div class="p-toggle <%= project.id %>">
-          <div class="p-text hidden"><%= project.abstract %></div>
-          <div class="p-button hidden"><%= link_to 'read article', project_path(project) %></div>
+        <div class="abstract-container hidden">
+        <div class="stripes">
+          <div class="text-inside"><div class="p-text "><p><%= raw project.abstract %></p></div></div>
+          <div class="p-button "><%= link_to t("read-lire"), project_path(project) %></div>
+          </div>
+        </div>
         </div>
     </div>
 
@@ -24,10 +28,6 @@
 
 $(".<%= project.title.parameterize %>").click(function(){
 $(".<%= project.id %>").children().toggleClass('hidden')
-});
-
-$(".<%= project.id %>").mouseleave(function(){
-$(this).children().addClass('hidden')
 });
 
 <%end%>

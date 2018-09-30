@@ -20,6 +20,9 @@ fr:
       sed accumsan risus elit vitae tellus. Etiam ut nibh velit. <br>
       In eget sollicitudin ipsum, vitae porttitor massa. Aenean pretium porttitor nunc, <br>
       a lobortis mi iaculis non. Maecenas facilisis ornare ante aliquet viverra.<br>
-
-
+  read-lire: "lire l'article"
+  subtitle:
+    other: "autre"
+    lign1: "Qui s'écarte de la doctrine officiellement reçue."
+    lign2_html: "Qui ne se conforme pas aux opinions communément admises dans un domaine donné."
 

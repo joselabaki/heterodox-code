@@ -16,3 +16,8 @@ en:
       Maecenas quis luctus elit. Donec ipsum quam, consequat ac enim at, convallis iaculis dui. <br>
       Phasellus porttitor tellus vel ante varius commodo. Fusce eu molestie velit. <br>
       Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
+  read-lire: "read article"
+  subtitle:
+    other: "other"
+    lign1: "At variance with established, orthodox, or accepted doctrines or beliefs."
+    lign2_html: "Characterized by departure from accepted beliefs, methods or standards."

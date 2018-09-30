@@ -1,3 +1,19 @@
-$(".1-p").mouseenter(function(){
-    $(".vd-image1").toggleClass('hidden')
+document.addEventListener("turbolinks:load", function() {
+$("#heterodox-logo").mouseenter(function(){
+$(".subtitle").removeClass("hidden")
+});
+    
+$("#heterodox-logo").mouseleave(function(){
+    $(".subtitle").addClass("hidden")
     });
+            
+
+
+
+
+
+
+
+
+
+});
