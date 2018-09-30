@@ -10,9 +10,15 @@ def should_generate_new_friendly_id?
   end
 
 
-    validates :title, presence: true
-
+    validates :title, :abstract , presence: true
     translates :title , :text
 
+    def next
+      Project.where("id > ?", id).limit(1).first
+    end
+  
+    def previous
+      Project.where("id < ?", id).limit(1).first
+    end
   
 end

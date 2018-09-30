@@ -21,3 +21,6 @@ en:
     other: "other"
     lign1: "At variance with established, orthodox, or accepted doctrines or beliefs."
     lign2_html: "Characterized by departure from accepted beliefs, methods or standards."
+  inner:
+    prev: "Previous"
+    next: "Next"

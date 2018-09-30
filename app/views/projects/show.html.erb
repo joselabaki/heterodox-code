@@ -18,6 +18,25 @@
 <%= link_to 'Destroy', project_path(@project),method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 
+<div class= "inner-nav">
+        <div class="prev">
+                    <%# if @project.previous%><%= link_to @project.previous do  %>
+                    <p class="prev-link"><%= t("inner.prev")%></p>
+                    <%= inline_svg "Next-arrow.svg" , id: "prev-arrow"%>
+                    <%# end%>
+                <%end%>
+        </div>
+        <div class="next">
+            <% if @project.next%><%= link_to @project.next  do%>
+                <div class="next-link"><%= t("inner.next")%></div>
+                <%= inline_svg "Next-arrow.svg" , id: "next-arrow"%>
+                <%end%>
+                <%end%>
+        </div>
+
+</div>
+
+
 <script>
 <% @project.images.each do |i| %>
     $(".<%=i.file.filename.parameterize%>-frame").mouseenter(function(){

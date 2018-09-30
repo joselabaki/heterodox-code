@@ -25,4 +25,7 @@ fr:
     other: "autre"
     lign1: "Qui s'écarte de la doctrine officiellement reçue."
     lign2_html: "Qui ne se conforme pas aux opinions communément admises dans un domaine donné."
+  inner:
+    prev: "Précédent"
+    next: "Suivant"
 
