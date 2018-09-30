@@ -1,21 +1,34 @@
 <% provide(:title, t("title.projects")) %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @project.text %>
-</p>
+<div class="all-projects"> 
+<div class ="show-title" ><%= raw @project.title.gsub(" ", "<br>") + "."%></div>
+<div class="show-body">
+<%=@project.text.html_safe %>
 
+<% @project.images.each do |i| %>
 
-<% @project.images.each do |image| %>
-  <%= image_tag (image.url)%>
-  <%end%>
+<div class="<%= i.file.filename.parameterize%> hidden"><%= image_tag (i.url)%></div>  
+<div class="<%=i.file.filename.parameterize%>-frame"></div>
+<%end%>
+</div>
+</div>
 
- 
-
-
+<% if current_user && current_user.admin? %>
 <%= link_to 'Edit', edit_project_path(@project) %>
+<%= link_to 'Destroy', project_path(@project),method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+<script>
+<% @project.images.each do |i| %>
+    $(".<%=i.file.filename.parameterize%>-frame").mouseenter(function(){
+    $(".<%=i.file.filename.parameterize %>").removeClass("hidden")
+    $(this).addClass("hidden")
+    });
+
+    $(".<%=i.file.filename.parameterize%>").mouseleave(function(){
+    $(".<%=i.file.filename.parameterize %>-frame").removeClass("hidden")
+    $(this).addClass("hidden")
+    });
+ 
+<%end%>
+</script>

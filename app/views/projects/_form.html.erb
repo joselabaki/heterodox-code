@@ -18,12 +18,16 @@
   
       <p>
         <%= form.label :title %><br>
-        <%= form.text_field :title %>
+        <%= form.text_area :title ,size: "60x1"%>
       </p>
-     
+      <p>
+      <%= form.label :abstract %><br>
+      <%= form.text_area :abstract, size: "60x15" %>
+    </p>
+
       <p>
         <%= form.label :text %><br>
-        <%= form.text_area :text %>
+        <%= form.text_area :text , size: "80x60" %>
       </p>
 
       <%= form.label :images %><br>

@@ -53,6 +53,6 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :text, {images: []} )
+  params.require(:project).permit(:title, :text, {images: []} , :abstract )
 end
 

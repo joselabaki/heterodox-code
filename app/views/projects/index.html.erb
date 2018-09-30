@@ -6,7 +6,7 @@
     <div class="p-index">
       <div class ="p-title <%= project.title.parameterize %>" > <%= project.title %></div><hr>
         <div class="p-toggle <%= project.id %>">
-          <div class="p-text hidden"><%= project.text %></div>
+          <div class="p-text hidden"><%= project.abstract %></div>
           <div class="p-button hidden"><%= link_to 'read article', project_path(project) %></div>
         </div>
     </div>
