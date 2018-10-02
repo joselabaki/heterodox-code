@@ -19,11 +19,7 @@
 
 $(document).ready( function() {
 console.log("fire!")
-$('#spinner').hide();
 
-    /*
-     * ... all of your jQuery ...
-     */
-
-    // At the bottom of your jQuery code, put this:
 });
+
+

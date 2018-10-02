@@ -5,7 +5,6 @@
 
 ////////////////////index////////////////
 
-
 .all-projects {
     margin-top: 100px;
 
@@ -62,7 +61,7 @@ margin-top: 40px;
 }
 
 .stripes{
-    background-image: url("tile-background.png");
+    background-image: url("tile-background-micro.png");
     background-size: 300px ;
     padding-left: 10px;
     display: grid;
@@ -70,6 +69,8 @@ margin-top: 40px;
     grid-auto-rows: minmax(min-content, max-content);
 
 }
+
+
 
 //////////////////show///////
 .show-body{
@@ -139,6 +140,9 @@ margin-top: 40px;
 #download-arrow , #subscribe-arrow{width:10px; margin-left: 5px; #Arrow_6_{fill:white;}}
 #download , #subscribe {color: white;font-family: "Untitled Sans"; font-size: 1.1em;margin:0px;margin-bottom: 15px;}
 .download , .subscribe{display: flex; align-items: baseline;}
+
+
+
 /////////////////////////////////////ADD NEW CSS/////////
 
 .test-jpeg-frame

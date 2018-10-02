@@ -8,22 +8,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.png') %>
-    <script>
-    var myimages=new Array()
-    function preloadimages(){
-    for (i=0;i<preloadimages.arguments.length;i++){
-    myimages[i]=new Image()
-    myimages[i].src=preloadimages.arguments[i]
-    }
-    }
-        preloadimages("http/www.heterodox.design/assets/tile-background.png" , "/assets/tile-background.png")
-    </script>
-  
   
     </head>
 
   <body>
-<div id="spinner"></div>
   <div class="main-container">
   <div class="navigation">
         <div class="logo">
