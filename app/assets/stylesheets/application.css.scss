@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
-
-
+.active{
+  border-bottom: 1px solid white;
+}
  @import 'variables';
 
  @media screen and (min-width: 1400px) {
@@ -83,6 +83,11 @@
     margin-top: 50px; 
     
     a{text-decoration: none; color:$hx-grey;}
+  .bigger{padding-top: 5px; padding-bottom: 5px;}
+  .active{
+    color:white;
+    border-bottom: 1px solid white;
+  }
     
     #heterodox-logo{width:350px;cursor:url('new-fill.png') , pointer;};
 
@@ -91,6 +96,10 @@
         display: grid;
         grid-template-columns: repeat(6,auto); 
         grid-gap: 20px; 
+        cursor:url('new-fill.png') , pointer;
+        padding: 10px;
+        padding-bottom: 0px;
+        padding-right: 0px;
     }
     
     #versions-arrow{width:10px;margin-left: 5px;}

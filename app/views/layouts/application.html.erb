@@ -9,6 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.png') %>
     <link rel="preload" href="preload.css.scss" as="style">
+
     </head>
 
   <body>
@@ -31,16 +32,15 @@
          </div>
         
         </div>
-            <div class="nav-items">
-          <div class="special-cursor home"></div>
-          <div class="special-cursor about"><%= link_to_unless_current t("nav.about") , about_path %></div>
-          <div class="special-cursor projects"><%= link_to_unless_current t("nav.projects"), projects_path %></div>
-          <div class="special-cursor contact"><%= link_to_unless_current "contact" , contact_path %></div>
-          <div class="special-cursor languages">
-            <%= link_to_unless_current "eng" , locale: "en" %> | <%= link_to_unless_current "fr" , locale: "fr" %> 
-          </div>
-          <div class="special-cursor versions-button">
-          <div><%= link_to_unless_current "versions", cronos_path %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
+          <div class="nav-items">
+          <div></div>
+          <div><%= link_to t("nav.about") , about_path , class:"bigger" , id:"big-left"%></div>
+          <div ><%= link_to t("nav.projects"), projects_path , class:"bigger" %></div>
+          <div><%= link_to "contact" , contact_path , class:"bigger" %></div>
+          <div>
+          <%= link_to "eng" , url_for( :locale => 'en' ) ,class:"bigger" %> | <%= link_to "fr" ,  url_for( :locale => 'fr' ) ,class:"bigger" %> </div>
+          <div>
+          <div><%= link_to"versions", cronos_path , class:"bigger" %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
         </div>
           </div>
          
