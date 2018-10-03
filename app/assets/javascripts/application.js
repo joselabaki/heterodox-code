@@ -31,18 +31,19 @@ $( document ).on('turbolinks:load', function() {
             // if the current path is like this link, make it active
             if($this.attr('href').indexOf(current) !== -1){
                 $this.addClass('active');
+
+                console.log($this.attr('href').indexOf(current) !== -1)
             }
+
+
+  if (location.pathname == "/en" || location.pathname == "/fr" || location.pathname == "/"  ){
+    $('.nav-items a').each(function(){
+        var $this = $(this);
+        $this.removeClass('active');
+})
+  };
+         
         })
     })
   })
 
-// $(function(){
-//     var current = location.pathname;
-//     $('.nav-items a').each(function(){
-//         var $this = $(this);
-//         // if the current path is like this link, make it active
-//         if($this.attr('href').indexOf(current) !== -1){
-//             $this.addClass('active');
-//         }
-//     })
-// })

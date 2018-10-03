@@ -12,10 +12,9 @@ Rails.application.routes.draw do
   get '/contact' => 'static#contact'
 
   resources :projects
-  root 'projects#index'
-  get 'leads/index'
+  # root 'projects#index', as: :root
+  root :to => redirect('/en/projects')
 
-  resources :leads
 end
 
 end
