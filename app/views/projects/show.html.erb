@@ -28,21 +28,34 @@
 <%= link_to 'Destroy', project_path(@project),method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 
-<div class= "inner-nav">
-        <div class="prev">
-                    <% if @project.previous%><%= link_to @project.previous do  %>
-                    <p class="prev-link"><%= t("inner.prev")%></p>
-                    <%= inline_svg "Next-arrow.svg" , id: "prev-arrow"%>
-                    <% end%>
-                <%end%>
+
+<div class="inner-navigation">
+
+        <div class="gauche">
+            <div class="mot-gauche">
+                <% if @project.previous%><%= link_to @project.previous do  %>
+                <%= @project.previous.title%><%end%>
+             </div>
+            <div class="fleche-gauche"><%= inline_svg "Next-arrow.svg" , id: "left-arrow" %>  <%end%>
+            </div>
+
+            </div>
+
+    <div class="centre">
+        <%= link_to projects_path do %>
+        <div class="symbole"><%= image_tag "new-fill.png" %></div>
+        <div class="centre-texte"><%= t("index.projects") %></div>
+        <%end%>
+    </div>
+    
+    <div class="droite">
+       
+        <div class="mot-droite"> <% if @project.next%><%= link_to @project.next  do%>
+            <%= @project.next.title %>
         </div>
-        <div class="next">
-            <% if @project.next%><%= link_to @project.next  do%>
-                <div class="next-link"><%= t("inner.next")%></div>
-                <%= inline_svg "Next-arrow.svg" , id: "next-arrow"%>
-                <%end%>
-                <%end%>
-        </div>
+        <div class="fleche-droite"><%= inline_svg "Next-arrow.svg" %><%end%><%end%></div>
+    </div>
+
 
 </div>
 

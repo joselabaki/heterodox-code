@@ -25,7 +25,8 @@ console.log("fire!")
 
 $( document ).on('turbolinks:load', function() {
     window.onload = $(function(){
-        var current = location.pathname;
+        var current = window.location.pathname + window.location.search + window.location.hash;
+        console.log(window.location.pathname + window.location.search + window.location.hash)
         $('.nav-items a').each(function(){
             var $this = $(this);
             // if the current path is like this link, make it active
@@ -42,8 +43,17 @@ $( document ).on('turbolinks:load', function() {
         $this.removeClass('active');
 })
   };
+
+
+  var currentURL = (document.URL); 
+  var part = currentURL.split("/")[5];
+  console.log(part);
+  console.log(currentURL);
+
+  if (part){$(".projects a").addClass('active');}
          
         })
     })
-  })
 
+
+  });

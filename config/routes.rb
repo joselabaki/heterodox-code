@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   resources :projects
   # root 'projects#index', as: :root
-  root :to => redirect('/en/projects')
+  root :to => redirect('en/projects')
 
 end
 

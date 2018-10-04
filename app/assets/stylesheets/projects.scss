@@ -91,46 +91,47 @@ margin-top: 40px;
   
 }
 
-.inner-nav{
-    display:grid;
-    grid-template-columns: 50% 50%;
+///////////////////////////////NEW NAV//////
+
+.inner-navigation{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
     margin-top:100px;
+    font-family: "Untitled Serif";
+    font-size: 1.1em;
+    a{text-decoration: none;color:white;}
+    text-transform: capitalize;
+.gauche{
+    display:grid;
+    width: 70%; 
+    justify-items: start;
+    #left-arrow{transform: rotate(180deg);}
+    .mot-gauche{justify-self: end;}
+    cursor:url('new-fill.png') , pointer;
+
 }
-.next{
+
+.droite{
+    display:grid;
+    width: 70%; 
+    justify-items: end;
     justify-self: end;
-    a{text-decoration: none;}
-    cursor:url('new-fill.png') , pointer;
-}
-.next-link{
-    color: white;
-    font-family: "Untitled Serif";
-    margin: 0;
-    font-size: 1.2em;
+    .mot-droite{justify-self: start;}
     cursor:url('new-fill.png') , pointer;
 
 }
 
-.prev{
-    justify-self: start;
-    a{text-decoration: none;}
-    cursor:url('new-fill.png') , pointer;
-}
-.prev-link{
-    color: white;
-    font-family: "Untitled Serif";
-    margin: 0;
-    cursor:url('new-fill.png') , pointer;
-    font-size: 1.2em;
-}
 
-#next-arrow{
-    width:250px;
+.centre{
+    width: 25%;
+    display:grid;
+    justify-items: center;
+    justify-self: center;
+    a {display: grid; justify-items: center;}
+    img{width: 15px;    justify-self: center;
+    }
+    .centre-texte{font-family: "Untitled Sans"; font-size: .8em;display: none;text-transform: none;}
 }
-
-#prev-arrow{
-    width:250px;
-    transform: rotate(180deg);
-
 }
 
 .add-links{

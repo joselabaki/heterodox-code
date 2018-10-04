@@ -27,3 +27,5 @@ en:
   add-links:
     download: "download as pdf"
     subscribe: "subscribe"
+  index:
+    projects: "all projects"

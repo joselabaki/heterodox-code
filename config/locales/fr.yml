@@ -32,4 +32,6 @@ fr:
   add-links:
     download: "télécharger en pdf"
     subscribe: "s' abonner"
+  index:
+    projects: "tous les projets"
 
