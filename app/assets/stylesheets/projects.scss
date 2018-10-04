@@ -134,6 +134,10 @@ margin-top: 40px;
 }
 }
 
+#left-arrow , #right-arrow{
+    svg{width:100px;}
+}
+
 .add-links{
     margin-top: 40px;
     cursor:url('new-fill.png') , pointer;
