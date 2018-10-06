@@ -112,6 +112,7 @@ margin-top: 40px;
 
 
 .prev-project-arrow{
+        justify-self:start;
         cursor:url(new-fill.png) , pointer;
         a{  cursor:url(new-fill.png) , pointer;}
         display: grid;
