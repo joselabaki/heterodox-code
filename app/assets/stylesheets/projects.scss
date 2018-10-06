@@ -99,12 +99,15 @@ margin-top: 40px;
     margin-top:100px;
     font-family: "Untitled Serif";
     font-size: 1.1em;
+    background-color: red;
     a{text-decoration: none;color:white;}
     text-transform: capitalize;
+
 .gauche{
     display:grid;
     width: 70%; 
     justify-items: start;
+    background-color: yellow;
     #left-arrow{transform: rotate(180deg);}
     .mot-gauche{justify-self: end;}
     cursor:url('new-fill.png') , pointer;
@@ -112,6 +115,7 @@ margin-top: 40px;
 }
 
 .droite{
+    background-color: green;
     display:grid;
     width: 70%; 
     justify-items: end;
@@ -123,6 +127,7 @@ margin-top: 40px;
 
 
 .centre{
+    background-color: aqua;
     width: 25%;
     display:grid;
     justify-items: center;
@@ -135,8 +140,11 @@ margin-top: 40px;
 }
 
 #left-arrow , #right-arrow{
+    background-clip: purple;
     svg{width:100px;}
 }
+
+///////////////////////////////
 
 .add-links{
     margin-top: 40px;
