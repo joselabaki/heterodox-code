@@ -1,7 +1,7 @@
 class Project < ApplicationRecord
   mount_uploaders :images, ImageUploader
+  mount_uploader :attachment, AttachmentUploader
 
-  
 extend FriendlyId
 friendly_id :title , use: :slugged
 
@@ -16,9 +16,9 @@ def should_generate_new_friendly_id?
     def next
       Project.where("id > ?", id).limit(1).first
     end
-  
+
     def previous
       Project.where("id < ?", id).limit(1).first
     end
-  
+
 end

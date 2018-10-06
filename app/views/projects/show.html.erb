@@ -15,7 +15,9 @@
 <div class="add-links">
 
     <div class="download">
+      <%=  link_to @project.attachment_url , download: @project.attachment_url,  target: "_blank" do %>
         <p id="download"><%= t("add-links.download")%></p><%= inline_svg "arrow.svg" , id: "download-arrow" %>
+        <% end%>
     </div>
     <div class="subscribe">
     <p id="subscribe"><%= t("add-links.subscribe")%> </p><%= inline_svg "arrow.svg" , id: "subscribe-arrow" %>

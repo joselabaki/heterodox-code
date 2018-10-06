@@ -31,7 +31,7 @@ margin-top: 40px;
     margin-top: 8px;
     font-family: "Untitled Sans";
     text-transform: none;
-    font-size: .9em;
+    font-size: .8em;
     color:white;
     p{
     display: inline;
@@ -150,13 +150,15 @@ img{width:15px; justify-self:center;}
 //////////////////////////
 .add-links{
     margin-top: 40px;
-    cursor:url('new-fill.png') , pointer;
+cursor:url('new-fill.png') , pointer;
+    display: inline-block;
+    a{text-decoration: none; display: flex; align-items: baseline;cursor:url('new-fill.png') , pointer;
 }
 #download-arrow , #subscribe-arrow{width:10px; margin-left: 5px; #Arrow_6_{fill:white;}}
 #download , #subscribe {color: white;font-family: "Untitled Sans"; font-size: 1.1em;margin:0px;margin-bottom: 15px;}
-.download , .subscribe{display: flex; align-items: baseline;}
+.subscribe{display: flex; align-items: baseline;}
 
-
+}
 
 /////////////////////////////////////ADD NEW CSS/////////
 

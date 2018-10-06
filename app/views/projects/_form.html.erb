@@ -14,8 +14,8 @@
       </ul>
     </div>
   <% end %>
-  
-  
+
+
       <p>
         <%= form.label :title %><br>
         <%= form.text_area :title ,size: "60x1"%>
@@ -31,7 +31,9 @@
       </p>
 
       <%= form.label :images %><br>
-      <%= form.file_field :images, multiple: true %>
+      <%= form.file_field :images, multiple: true %><br><br>
+      <%= form.label :attachment %> <br>
+   <%= form.file_field :attachment %>
 
 
 
@@ -40,5 +42,5 @@
         <%= form.submit %>
       </p>
     <% end %>
-  
+
     <%= link_to 'Back', projects_path %>

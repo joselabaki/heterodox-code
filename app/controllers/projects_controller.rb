@@ -23,18 +23,18 @@ before_action :authenticate_user! , except: [:show , :index]
       render 'new'
     end
   end
-   
+
   def update
     @project = Project.friendly.find(params[:id])
-   
+
     if @project.update(project_params)
       redirect_to @project
     else
       render 'edit'
     end
   end
- 
- 
+
+
   def show
     @project = Project.friendly.find(params[:id])
   end
@@ -42,9 +42,9 @@ before_action :authenticate_user! , except: [:show , :index]
   def destroy
     @project = Project.friendly.find(params[:id])
     @project.destroy
-   
+
     redirect_to projects_path
-    
+
   end
 
 
@@ -53,6 +53,5 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :text, {images: []} , :abstract )
+  params.require(:project).permit(:title, :text, {images: []} , :abstract , :attachment)
 end
-
