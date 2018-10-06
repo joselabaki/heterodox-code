@@ -33,30 +33,25 @@
 
         <div class="gauche">
             <div class="mot-gauche">
-                <% if @project.previous%>
-                <%= link_to @project.previous do  %>
-                <%= @project.previous.title%><%end%>
+                <%= @project.previous.title%>
              </div>
-            <div class="fleche-gauche"><%= inline_svg "Next-arrow.svg" , id: "left-arrow" %>  <%end%>
+            <div class="fleche-gauche"><%= inline_svg "Next-arrow.svg" , id: "left-arrow" %> 
             </div>
 
             </div>
 
     <div class="centre">
-        <%= link_to projects_path do %>
         <div class="symbole"><%= image_tag "new-fill.png" %></div>
         <div class="centre-texte"><%= t("index.projects") %></div>
-        <%end%>
     </div>
     
     <div class="droite">
        
         <div class="mot-droite"> 
-        <% if @project.next%>
-           <div>     <%= link_to @project.next  do%>
+           <div>    
             <%= @project.next.title %>
             </div>
-        <div class="fleche-droite"><%= inline_svg "Next-arrow.svg" , id: "right-arrow" %><%end%> <%end%></div>
+        <div class="fleche-droite"><%= inline_svg "Next-arrow.svg" , id: "right-arrow" %></div>
     </div>
 
 
