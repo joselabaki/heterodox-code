@@ -35,7 +35,7 @@
     <%= link_to @project.previous do %>
         <div class= "prev-project-arrow">
                 <div class="prev-project-name"><%= @project.previous.title%></div><!-- previous project title -->
-                <div class="arrow-left"><%= inline_svg "Next-arrow.svg" , class: "arrow-dev"%></div><!-- arrow-right-->
+                <div class="arrow-left"><%= inline_svg "Next-arrow.svg" , class: "arrow-dev" , style:"width:400px;"%></div><!-- arrow-right-->
         </div><!--project-arrow -->
         <% end %> <!-- link to previous project -->
 <% else %> <div></div><!--empty div-->
