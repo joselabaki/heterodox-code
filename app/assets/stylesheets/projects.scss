@@ -19,7 +19,7 @@ margin-top: 40px;
     font-size: 1.3em;
     color: white;
     cursor:url(new-fill.png) , pointer;
-  
+
 }
 
 
@@ -42,9 +42,9 @@ margin-top: 40px;
 
 }
 
-.p-button{ 
+.p-button{
     margin-top: 25px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
     a {
     text-decoration: none;
     font-family: "Untitled Sans";
@@ -88,64 +88,105 @@ margin-top: 40px;
     text-transform: capitalize;
     font-size: 2.8em;
     color: white;
-  
+
 }
 
 ///////////////////////////////NEW NAV//////
 
-.inner-navigation{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    margin-top:100px;
-    font-family: "Untitled Serif";
-    font-size: 1.1em;
-    background-color: red;
-    a{text-decoration: none;color:white;}
-    text-transform: capitalize;
+// .inner-navigation{
+//     display: grid;
+//     grid-template-columns: repeat(3 , 1fr);
+//     margin-top:100px;
+//     font-family: "Untitled Serif";
+//     font-size: 1.1em;
+//     background-color: red;
+//     a{text-decoration: none;color:white;}
+//     text-transform: capitalize;
 
-.gauche{
-    display:grid;
-    width: 70%; 
-    justify-items: start;
-    background-color: yellow;
-    #left-arrow{transform: rotate(180deg);}
-    .mot-gauche{justify-self: end;}
-    cursor:url('new-fill.png') , pointer;
+// .gauche{
+//     display:grid;
+//     width: 70%;
+//     justify-items: start;
+//     background-color: yellow;
+//     #left-arrow{transform: rotate(180deg);}
+//     .mot-gauche{justify-self: end;}
+//     cursor:url('new-fill.png') , pointer;
 
-}
+// }
 
-.droite{
-    background-color: green;
-    display:grid;
-    width: 70%; 
-    justify-items: end;
-    justify-self: end;
-    .mot-droite{justify-self: start;}
-    cursor:url('new-fill.png') , pointer;
+// .droite{
+//     background-color: green;
+//     display:grid;
+//     width: 70%;
+//     justify-items: end;
+//     justify-self: end;
+//     .mot-droite{justify-self: start;}
+//     cursor:url('new-fill.png') , pointer;
 
-}
+// }
 
 
-.centre{
-    background-color: aqua;
-    width: 25%;
-    display:grid;
-    justify-items: center;
-    justify-self: center;
-    a {display: grid; justify-items: center;}
-    img{width: 15px;    justify-self: center;
-    }
-    .centre-texte{font-family: "Untitled Sans"; font-size: .8em;display: none;text-transform: none;}
-}
-}
+// .centre{
+//     background-color: aqua;
+//     width: 25%;
+//     display:grid;
+//     justify-items: center;
+//     justify-self: center;
+//     a {display: grid; justify-items: center;}
+//     img{width: 15px;    justify-self: center;
+//     }
+//     .centre-texte{font-family: "Untitled Sans"; font-size: .8em;display: none;text-transform: none;}
+// }
+// }
 
-#left-arrow , #right-arrow{
-    background-clip: purple;
-    svg{width:100px;}
-}
+// #left-arrow , #right-arrow{
+//     background-clip: purple;
+//     svg{width:100px;}
+// }
 
 ///////////////////////////////
 
+
+//////inner nav////
+.inner-nav{
+  display: grid;
+  background-color: red;
+  grid-template-columns: repeat(3 , 1fr);
+  a{text-decoration: none;color: white;  cursor: url('new-fill.png') , pointer;
+}
+  font-family: "Untitled Serif";
+  font-size: 1.1em;
+
+
+.prev-project-arrow{
+  display: grid;
+  background-color:green;
+        .prev-project-name{justify-self:end;
+             }
+      .arrow-left{transform: rotate(180deg);}
+}
+
+.center{
+  display: grid;
+  justify-content: center;
+  .centre-symbol{justify-self:center; img{width:15px;}}
+  .centre-texte{font-family: "Untitled Sans"; font-size: .9em;}
+}
+
+.next-project-arrow{
+  display: grid;
+
+
+  background-color: yellow;}
+
+}
+
+
+
+
+
+
+//////////////////////////
 .add-links{
     margin-top: 40px;
     cursor:url('new-fill.png') , pointer;
@@ -162,7 +203,7 @@ margin-top: 40px;
 {
     width:400px;
     height: 400px;
-    border: 1px solid $hx-grey; 
+    border: 1px solid $hx-grey;
     display:none; /////////////////////////////remove
 }
 
@@ -175,8 +216,7 @@ margin-top: 40px;
     left:90px;
     width:400px;
     height: 400px;
-    border: 1px solid $hx-grey; 
+    border: 1px solid $hx-grey;
     display:none; /////////////////////////////remove
 
 }
-
