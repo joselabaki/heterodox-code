@@ -33,20 +33,15 @@
       width: 1970px;
     }
   }
-   
- *{
-  cursor: url(new-stroke.png), default;
-  a{cursor:url(new-fill.png) , pointer;
-  }
- } 
 
  html{height: 100%;}
  body{
+   cursor: url(new-stroke.png), default;
      background-color: black;
      margin:0;
      padding: 0;
     color: $hx-grey
-  
+
     }
 
  @font-face {
@@ -80,9 +75,10 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: end;
     list-style-type: none;text-transform: uppercase;
-    margin-top: 50px; 
-    
-    a{text-decoration: none; color:$hx-grey;}
+    margin-top: 50px;
+
+    a{text-decoration: none; color:$hx-grey;  cursor:url(new-fill.png) , pointer;
+}
   .bigger{padding-top: 5px; padding-bottom: 5px;}
   .active{
     color:white;
@@ -90,25 +86,25 @@
   }
   #on-load{
     color:white;
-    border-bottom: 1px solid white;  
+    border-bottom: 1px solid white;
   }
-    
+
     #heterodox-logo{width:350px;cursor:url('new-fill.png') , pointer;};
 
     .nav-items{
         justify-self: end;
         display: grid;
-        grid-template-columns: repeat(6,auto); 
-        grid-gap: 20px; 
+        grid-template-columns: repeat(6,auto);
+        grid-gap: 20px;
         cursor:url('new-fill.png') , pointer;
         padding: 10px;
         padding-bottom: 0px;
         padding-right: 0px;
     }
-    
+
     #versions-arrow{width:10px;margin-left: 5px;}
     #versions-odin{position: absolute;display:none;}
-    
+
 }
 
 .subtitle{

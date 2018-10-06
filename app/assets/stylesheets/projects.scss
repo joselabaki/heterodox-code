@@ -43,9 +43,11 @@ margin-top: 40px;
 }
 
 .p-button{
+    cursor:url(new-fill.png) , pointer;
     margin-top: 25px;
     margin-bottom: 25px;
-    a {
+    a{
+    cursor:url(new-fill.png) , pointer;
     text-decoration: none;
     font-family: "Untitled Sans";
     text-transform: none;
@@ -95,33 +97,45 @@ margin-top: 40px;
 
 //////inner nav////
 .inner-nav{
-  margin-top: 100px;
+  margin-top: 200px;
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  a{text-decoration: none;color: white;  }
+  a{text-decoration: none;color: white;}
   text-transform: capitalize;
   font-family: "Untitled Serif";
   font-size: 1.1em;
 .arrow-dev {
   width:100%;
+  cursor:url(new-fill.png) , pointer;
+
 }
 
 
 .prev-project-arrow{
+        cursor:url(new-fill.png) , pointer;
+        a{  cursor:url(new-fill.png) , pointer;}
         display: grid;
         justify-items: end;
-        .prev-project-name{}
         .arrow-left{transform: rotate(180deg);}
 }
 
 .center{
+  width:30%;
   display: grid;
-  justify-content: center;
-  .centre-symbol{justify-self:center; img{width:15px;}}
-  .centre-texte{font-family: "Untitled Sans"; font-size: .8em; text-transform: none;}
+justify-self: center;
+justify-content: center;
+cursor:url(new-fill.png) , pointer;
+a{ cursor:url(new-fill.png) , pointer;}
+.centre-symbol{display: grid;}
+img{width:15px; justify-self:center;}
+.centre-texte{font-family: "Untitled Sans"; font-size: .8em; text-transform: none;}
 }
 
 .next-project-arrow{
+  cursor:url(new-fill.png) , pointer;
+  a{  cursor:url(new-fill.png) , pointer;}
+
+
   display: grid;
 
 }

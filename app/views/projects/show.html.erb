@@ -41,12 +41,13 @@
 <% else %> <div></div><!--empty div-->
 <%end%> <!-- if -->
 
-<%= link_to projects_path do %>
 <div class="center">
+  <%= link_to projects_path do %>
 <div class="centre-symbol"><%=image_tag ("new-fill.png")%></div>
-<div class="centre-texte"><%=t("index.projects")%></div>
+<div class="centre-texte hidden"><%=t("index.projects")%></div>
+<% end %>
 </div>
-<% end %> <!-- back to main link -->
+<!-- back to main link -->
 <% if @project.next%>
         <%= link_to @project.next do %>
             <div class= "next-project-arrow">
