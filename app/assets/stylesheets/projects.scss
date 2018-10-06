@@ -91,60 +91,6 @@ margin-top: 40px;
 
 }
 
-///////////////////////////////NEW NAV//////
-
-// .inner-navigation{
-//     display: grid;
-//     grid-template-columns: repeat(3 , 1fr);
-//     margin-top:100px;
-//     font-family: "Untitled Serif";
-//     font-size: 1.1em;
-//     background-color: red;
-//     a{text-decoration: none;color:white;}
-//     text-transform: capitalize;
-
-// .gauche{
-//     display:grid;
-//     width: 70%;
-//     justify-items: start;
-//     background-color: yellow;
-//     #left-arrow{transform: rotate(180deg);}
-//     .mot-gauche{justify-self: end;}
-//     cursor:url('new-fill.png') , pointer;
-
-// }
-
-// .droite{
-//     background-color: green;
-//     display:grid;
-//     width: 70%;
-//     justify-items: end;
-//     justify-self: end;
-//     .mot-droite{justify-self: start;}
-//     cursor:url('new-fill.png') , pointer;
-
-// }
-
-
-// .centre{
-//     background-color: aqua;
-//     width: 25%;
-//     display:grid;
-//     justify-items: center;
-//     justify-self: center;
-//     a {display: grid; justify-items: center;}
-//     img{width: 15px;    justify-self: center;
-//     }
-//     .centre-texte{font-family: "Untitled Sans"; font-size: .8em;display: none;text-transform: none;}
-// }
-// }
-
-// #left-arrow , #right-arrow{
-//     background-clip: purple;
-//     svg{width:100px;}
-// }
-
-///////////////////////////////
 
 
 //////inner nav////
@@ -152,10 +98,13 @@ margin-top: 40px;
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  a{text-decoration: none;color: white;  cursor: url('new-fill.png') , pointer;}
+  a{text-decoration: none;color: white;  }
   text-transform: capitalize;
   font-family: "Untitled Serif";
   font-size: 1.1em;
+.arrow-dev {
+  width:100%;
+}
 
 
 .prev-project-arrow{
