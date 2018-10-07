@@ -15,8 +15,15 @@ $(".center").mouseleave(function(){
     $(".centre-texte").addClass("hidden")
     });
 
+$(".subscribe").click(function(){
+$(".signup-form").removeClass("hidden")
 
+});
 
+$(".popup-close").click(function(){
+$(".signup-form").addClass("hidden")
+
+});
 
 
 });

@@ -1,8 +1,8 @@
 en:
   nav:
-    home: "Home" 
+    home: "Home"
     about: "About"
-    projects: "Projects" 
+    projects: "Projects"
   title:
     home: "Home"
     about: "About"
@@ -10,7 +10,7 @@ en:
   contact:
     designer: "the designer"
     concept: "the concept"
-    concept_html: 
+    concept_html:
       Vivamus dapibus eleifend orci suscipit scelerisque. <br>
       Fusce vitae purus et lacus lacinia posuere in id nisi. Nullam maximus scelerisque posuere.<br>
       Maecenas quis luctus elit. Donec ipsum quam, consequat ac enim at, convallis iaculis dui. <br>
@@ -29,3 +29,7 @@ en:
     subscribe: "subscribe"
   index:
     projects: "all projects"
+  projects:
+      subscribe: "Subscribe to Heterodox Newsletter"
+  popup:
+    subscribe: "Subscribe"

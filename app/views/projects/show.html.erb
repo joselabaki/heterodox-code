@@ -29,8 +29,24 @@
 <%= link_to 'Edit', edit_project_path(@project) %>
 <%= link_to 'Destroy', project_path(@project),method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
+<!-- Begin Mailchimp Signup Form -->
 
+<!--End mc_embed_signup-->
+<div class="signup-form ">
+  <form action="https://design.us19.list-manage.com/subscribe/post?u=a820f695e157d47b39602433e&amp;id=d082980fd9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div class="popup-head">
+  <div class="signup-title"><%= t("projects.subscribe") %></div>
+  <div class="popup-close"><%=inline_svg "close.svg" %></div>
+</div>
 
+<div class="email-button">
+  <input type="email" value="" name="EMAIL" class="email" id:"popup-email" placeholder="email" required>
+  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a820f695e157d47b39602433e_d082980fd9" tabindex="-1" value=""></div>
+<input type="submit" value="<%= t("popup.subscribe")%>" name="subscribe" class="button">
+
+</div>
+</form>
+</div><!-- signup form-->
 <div class= "inner-nav">
 
 <% if @project.previous%>

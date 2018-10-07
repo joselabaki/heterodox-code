@@ -159,7 +159,42 @@ cursor:url('new-fill.png') , pointer;
 .subscribe{display: flex; align-items: baseline;}
 
 }
+////////POPUP/////
 
+.signup-form{
+  position: absolute;
+  margin-top: 20px;
+  background-color: black;
+  font-family: "Untitled Sans";
+  color: white;
+  box-shadow: 0px 0px 15px 4px white;
+  padding: 20px;
+  width: 30%;
+
+.popup-head{display: grid;
+ grid-template-columns: 85% 15%;
+}
+.popup-close{display: grid; cursor:url('new-fill.png') , pointer;
+  align-items: end;
+  justify-items:center;
+  svg{width: 13px;}}
+
+input{
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-family: "Untitled Sans";
+  border-radius: 0px;
+  border-style: solid;}
+  .email{cursor: url('typetool.png'), text;}
+.button{
+  background-color: white;
+  color: black;
+  margin-left: 10px;
+  text-transform: lowercase;
+  cursor:url('new-fill.png') , pointer;
+}
+}
 /////////////////////////////////////ADD NEW CSS/////////
 
 .test-jpeg-frame
