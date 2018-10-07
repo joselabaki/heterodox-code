@@ -170,7 +170,7 @@ cursor:url('new-fill.png') , pointer;
   color: white;
   box-shadow: 0px 0px 15px 4px white;
   padding: 20px;
-  width: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
 .popup-head{display: grid;
  grid-template-columns: 85% 15%;

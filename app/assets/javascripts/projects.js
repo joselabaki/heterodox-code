@@ -16,12 +16,12 @@ $(".center").mouseleave(function(){
     });
 
 $(".subscribe").click(function(){
-$(".signup-form").removeClass("hidden")
+$(".signup").removeClass("hidden")
 
 });
 
 $(".popup-close").click(function(){
-$(".signup-form").addClass("hidden")
+$(".signup").addClass("hidden")
 
 });
 
