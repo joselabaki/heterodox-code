@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Heterodox - <%= yield(:title) %> </title>
+  <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'exception', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+
+    </head>
+
+  <body>
+  <div class="main-container">
+    <h1>On Exception</h1>
+  <%= render 'layouts/alerts' %>
+    <%= yield %>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>

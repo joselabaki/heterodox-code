@@ -10,7 +10,7 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports.
-  config.consider_all_requests_local = true
+  config.consider_all_requests_local = false
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
@@ -74,7 +74,6 @@ config.action_mailer.smtp_settings = {
 config.action_mailer.default_url_options = {host: "localhost:3000"}
 
 
-config.consider_all_requests_local = false
 
 
 
