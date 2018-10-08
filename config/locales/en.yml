@@ -33,3 +33,5 @@ en:
       subscribe: "Subscribe to Heterodox Newsletter"
   popup:
     subscribe: "Subscribe"
+  error:
+    back: "back to homepage"

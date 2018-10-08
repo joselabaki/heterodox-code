@@ -1,1 +1,46 @@
-$hx-grey: #999999
+$hx-grey: #999999;
+
+
+
+
+ @media screen and (min-width: 1400px) {
+    .main-container {
+      width: 1470px;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .main-container {
+      width: 1670px;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .main-container {
+      width: 1970px;
+    }
+  }
+
+ html{height: 100%;}
+ body{
+   cursor: url(new-stroke.png), default;
+     background-color: black;
+     margin:0;
+     padding: 0;
+    color: $hx-grey
+
+    }
+
+ @font-face {
+    font-family: 'Untitled Sans';
+    src:font-url('UntitledSansWeb.ttf');
+
+}
+
+@font-face {
+    font-family: 'Untitled Serif';
+    src:font-url('UntitledSerifWeb.otf');
+}
+
+@font-face {
+  font-family: 'Serif Italic';
+    src:font-url('Renamed.ttf');
+}

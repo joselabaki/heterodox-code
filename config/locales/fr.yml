@@ -31,10 +31,12 @@ fr:
 
   add-links:
     download: "télécharger en pdf"
-    subscribe: "s' abonner"
+    subscribe: "s'abonner"
   index:
     projects: "tous les projets"
   projects:
     subscribe: "S'abonner au journal Heterodox"
   popup:
     subscribe: "S'abonner"
+  error:
+    back: "retour à l'accueil"

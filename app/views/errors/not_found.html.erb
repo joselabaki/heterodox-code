@@ -1,4 +1,5 @@
-<% provide(:title, "404") %>
+<% provide(:error, "404") %>
 
-<h1>Errors#not_found</h1>
-<p>Find me in app/views/errors/not_found.html.erb</p>
+<%= render "error" %>
+
+<% provide(:title, "404") %>

@@ -1,0 +1,12 @@
+
+<div class="error">
+  <div class="error-box">
+<div class="snake">
+<%= render "snake" %>
+</div>
+<div class="error-code"><%= yield(:error) %></div>
+<%= link_to projects_path do %>
+<div class="back-home"><%= t("error.back") %></div>
+<% end%>
+</div>
+</div>

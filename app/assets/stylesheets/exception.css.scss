@@ -1,0 +1,26 @@
+@import 'variables';
+
+body{
+  background-color: black;
+  color:white;
+  box-sizing: border-box;
+}
+.error{
+display: grid;
+grid-template-rows: 500px;
+grid-template-columns: 1fr;
+font-family: "Untitled Sans"
+}
+
+.error-box{
+  justify-self:center;
+  align-self: center;
+  a{text-decoration: none; color: white;  cursor:url('new-fill.png') , pointer;}
+}
+.error-code{margin-top: 10px;}
+.white-frame{
+  width: 200px;
+  height: 300px;
+  border: 1px dashed white;
+
+}
