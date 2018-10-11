@@ -24,6 +24,8 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
+    add projects_path, :priority => 0.7, :changefreq => 'daily'
+
     Project.find_each do |project|
        add project_path(project, locale: :en)
        add project_path(project, locale: :fr)
