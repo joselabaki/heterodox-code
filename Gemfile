@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
@@ -65,7 +65,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'inline_svg'
 
 #Friendly ids
-gem 'friendly_id', '~> 5.2.0' 
+gem 'friendly_id', '~> 5.2.0'
 
 #Authentication
 gem 'devise'
@@ -73,6 +73,7 @@ gem 'devise'
 gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem "mini_magick"
 gem 'carrierwave', '~> 1.0'
-gem 'mailchimp-api', require: 'mailchimp'
 gem 'browser'
 gem 'jquery-rails'
+gem 'sitemap_generator'
+gem "fog-aws"
