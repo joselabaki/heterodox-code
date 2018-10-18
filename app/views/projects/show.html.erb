@@ -1,4 +1,4 @@
-<% provide(:title, t("title.projects")) %>
+<% provide(:title, @project.title) %>
 
 <div class="all-projects">
 <div class ="show-title" ><%= raw @project.title.gsub(" ", "<br>") + "."%></div>

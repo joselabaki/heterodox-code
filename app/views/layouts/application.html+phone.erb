@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HeterodoxCode</title>
-    <%= csrf_meta_tags %>
+  <title>Heterodox | <%= yield(:title) %> </title>
+  <meta name="google-site-verification" content="zvyeg6MZg-07VO-onmK7sS9uHRMhDgSB3yuCFh6P3b0" />
+  <meta name="description" content="Here is a precise description of my site" />
+  <meta name="robots" content="index, follow" />
+
+  <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+    <link rel="preload" href="preload.css.scss" as="style">
+
+    </head>
 
   <body>
-  
-  
-  <div class ="header">
-    <%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %>
-      <div class="nav">
-      <ul>
-          <li><%= link_to_unless_current t("nav.home"), root_path %></li>
-          <li><%= link_to_unless_current t("nav.about") , static_about_path %></li>
-          <li><%= link_to_unless_current t("nav.projects"), projects_path %></li>
-          <li><%= link_to_unless_current t("nav.contact") , static_contact_path %></li>
-          <li><%= link_to_unless_current t("nav.versions") %></li>
-          <%= link_to_unless_current "ENG" , locale: "en" %> |
-           <%= link_to_unless_current "FR" , locale: "fr" %>
-        </ul>
-      </div>
-  </div>
-  
-  <%= render 'layouts/alerts' %>
+  <div class="main-container">
+  <div class="navigation">
+        <div class="logo">
 
+
+        <%= link_to projects_path do %>
+        <%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %>
+        <% end %>
+
+        <div class="subtitle hidden">
+         <div class="explain">
+          <p class="white-bg">
+          <span class="latin">hetero </span> <span class="serif"> <%= t("subtitle.other")%> </span> + <span class="latin">doxa</span> <span class="serif">opinion</span></p>
+          </div>
+          <p class="white-bg"><%=t("subtitle.lign1")%></p><br>
+          <p class="white-bg"><%=t("subtitle.lign2_html")%></p>
+         </div>
+
+        </div>
+          <div class="nav-items">
+          <div></div>
+          <div><%= link_to t("nav.about") , about_path , class:"bigger" , id:"big-left"%></div>
+          <div class="projects"><%= link_to t("nav.projects"), projects_path , class:"bigger" %></div>
+          <div><%= link_to "contact" , contact_path , class:"bigger" %></div>
+          <div>
+          <%= link_to "eng" , url_for( :locale => 'en' ) ,class:"bigger" %> | <%= link_to "fr" ,  url_for( :locale => 'fr' ) ,class:"bigger" %> </div>
+          <div>
+          <div><%= link_to"versions", cronos_path , class:"bigger" %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
+        </div>
+          </div>
+
+  </div>
+  <%= render 'layouts/alerts' %>
     <%= yield %>
+    </div>
+    <div class="footer"></div>
   </body>
 </html>
