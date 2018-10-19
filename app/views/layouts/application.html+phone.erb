@@ -17,9 +17,9 @@
     </head>
 
   <body>
-  <div class="main-container">
-  <div class="navigation">
-        <div class="logo">
+  <div class="m-main-container">
+  <div class="m-navigation">
+        <div class="m-logo">
 
 
         <%= link_to projects_path do %>
@@ -43,9 +43,6 @@
           <div><%= link_to "contact" , contact_path , class:"bigger" %></div>
           <div>
           <%= link_to "eng" , url_for( :locale => 'en' ) ,class:"bigger" %> | <%= link_to "fr" ,  url_for( :locale => 'fr' ) ,class:"bigger" %> </div>
-          <div>
-          <div><%= link_to"versions", cronos_path , class:"bigger" %> <%= inline_svg "arrow.svg"  , id: "versions-arrow" %></div>
-        </div>
           </div>
 
   </div>
