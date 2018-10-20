@@ -1,0 +1,93 @@
+<% provide(:title, @project.title) %>
+
+<div class="m-all-projects">
+<div class ="m-show-title" ><%= raw @project.title.gsub(" ", "<br>") + "."%></div>
+<div class="m-show-body">
+<%=@project.text.html_safe %>
+<% @project.images.each do |i| %>
+
+<div class="<%= i.file.filename.parameterize%> hidden"><%= image_tag (i.url)%></div>
+<div class="<%=i.file.filename.parameterize%>-frame"></div>
+<%end%>
+</div>
+</div>
+
+<div class="add-links">
+
+    <div class="download">
+      <%=  link_to @project.attachment_url , download: @project.attachment_url,  target: "_blank" do %>
+        <p id="download"><%= t("add-links.download")%></p><%= inline_svg "arrow.svg" , id: "download-arrow" %>
+        <% end%>
+    </div>
+    <div class="subscribe">
+    <p id="subscribe"><%= t("add-links.subscribe")%> </p><%= inline_svg "arrow.svg" , id: "subscribe-arrow" %>
+    </div>
+
+</div>
+
+<% if current_user && current_user.admin? %>
+<%= link_to 'Edit', edit_project_path(@project) %>
+<%= link_to 'Destroy', project_path(@project),method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+<!-- Begin Mailchimp Signup Form -->
+
+<!--End mc_embed_signup-->
+<div class="signup hidden">
+<div class="signup-form">
+  <form action="https://design.us19.list-manage.com/subscribe/post?u=a820f695e157d47b39602433e&amp;id=d082980fd9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div class="popup-head">
+  <div class="signup-title"><%= t("projects.subscribe") %></div>
+  <div class="popup-close"><%=inline_svg "close.svg" %></div>
+</div>
+
+<div class="email-button">
+  <input type="email" value="" name="EMAIL" class="email" id:"popup-email" placeholder="email" required>
+  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a820f695e157d47b39602433e_d082980fd9" tabindex="-1" value=""></div>
+<input type="submit" value="<%= t("popup.subscribe")%>" name="subscribe" class="button">
+
+</div>
+</form>
+</div><!-- signup form-->
+</div><!-- signup-->
+
+<div class="inav">
+    <div class="iprev">
+      <%if @project.previous%>
+      <%= link_to @project.previous do %>
+
+        <div class="iprev-name"><%= @project.previous.title%></div>
+        <div class="iprev-arrow"><%= inline_svg "Next-arrow.svg" %></div>
+        <%end%>
+        <% end%>
+    </div><!--prev-->
+    <div class="icenter">
+      <div class="centre-symbol"><%=image_tag ("new-fill.png")%></div>
+    </div>
+
+
+    <div class="inext">
+      <%= link_to @project.next do %>
+
+      <% if  @project.next %>
+      <div class="inext-name"><%= @project.next.title%></div>
+      <div class="inext-arrow"><%= inline_svg "Next-arrow.svg" %></div>
+      <% end %>
+      <% end %>
+    </div>
+</div><!-- inav -->
+
+
+<script>
+<% @project.images.each do |i| %>
+    $(".<%=i.file.filename.parameterize%>-frame").mouseenter(function(){
+    $(".<%=i.file.filename.parameterize %>").removeClass("hidden")
+    $(this).addClass("hidden")
+    });
+
+    $(".<%=i.file.filename.parameterize%>").mouseleave(function(){
+    $(".<%=i.file.filename.parameterize %>-frame").removeClass("hidden")
+    $(this).addClass("hidden")
+    });
+
+<%end%>
+</script>

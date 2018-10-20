@@ -23,36 +23,25 @@
 
         <div class="m-logo">
 
-
-        <%= link_to projects_path do %>
-        <%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %>
-        <% end %>
-
-        <div class="subtitle hidden">
-         <div class="explain">
-          <p class="white-bg">
-          <span class="latin">hetero </span> <span class="serif"> <%= t("subtitle.other")%> </span> + <span class="latin">doxa</span> <span class="serif">opinion</span></p>
-          </div>
-          <p class="white-bg"><%=t("subtitle.lign1")%></p><br>
-          <p class="white-bg"><%=t("subtitle.lign2_html")%></p>
-         </div>
-
+          <div><%= inline_svg "heterodox-01.svg" , id: 'heterodox-logo' %></div>
          <div class="hamburger"> <%= inline_svg 'hamburger.svg' , id: 'hamburger'%></div>
          <div class="closing hidden"> <%= inline_svg 'closing.svg' , id: 'closing'%></div>
+
 
         </div>
           <div class="nav-items">
           <div><%= link_to t("nav.about") , about_path , class:"bigger" , id:"big-left"%></div>
           <div class="m-projects"><%= link_to t("nav.projects"), projects_path , class:"bigger" %></div>
           <div><%= link_to "contact" , contact_path , class:"bigger" %></div>
-          <div>
-          <%= link_to "eng" , url_for( :locale => 'en' ) ,class:"bigger" %> | <%= link_to "fr" ,  url_for( :locale => 'fr' ) ,class:"bigger" %> </div>
+          <div class="m-lang">
+          <%= link_to "eng" , url_for( :locale => 'en' ) ,class:"bigger" %> | <%= link_to "fr" ,  url_for( :locale => 'fr' ) ,class:"m-bigger" %> </div>
           </div>
 
-  </div>
+</div>
   <%= render 'layouts/alerts' %>
     <%= yield %>
-    </div>
-    <div class="footer"></div>
-  </body>
+  </div><!-- main-container -->
+
+    <!-- <div class="footer"></div> -->
+</body>
 </html>

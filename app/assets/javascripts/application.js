@@ -17,26 +17,14 @@
 //= require_self
 //= require_tree .
 
-$(document).ready( function() {
-console.log("fire!")
-
-
-});
-
-
-
-
 $( document ).on('turbolinks:load', function() {
     window.onload = $(function(){
         var current = window.location.pathname + window.location.search + window.location.hash;
-        console.log(window.location.pathname + window.location.search + window.location.hash)
         $('.nav-items a').each(function(){
             var $this = $(this);
             // if the current path is like this link, make it active
             if($this.attr('href').indexOf(current) !== -1){
                 $this.addClass('active');
-
-                console.log($this.attr('href').indexOf(current) !== -1)
             }
 
 
@@ -50,25 +38,29 @@ $( document ).on('turbolinks:load', function() {
 
   var currentURL = (document.URL);
   var part = currentURL.split("/")[5];
-  console.log(part);
-  console.log(currentURL);
 
   if (part){$(".projects a").addClass('active');}
-
-        })
+})
     })
 
   $('.hamburger').click(function(){
   $(this).addClass("hidden")
   $(".closing").removeClass("hidden")
-  $(".nav-items").slideDown(400)
+  $(".nav-items").slideDown("slow")
   });
 
   $('.closing').click(function(){
   $(this).addClass("hidden")
   $(".hamburger").removeClass("hidden")
-  $(".nav-items").slideUp(400)
+  $(".nav-items").slideUp("slow")
 
   });
+
+
+
+
+
+
+
 
   });
