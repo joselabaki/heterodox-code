@@ -77,7 +77,3 @@ gem 'browser'
 gem 'jquery-rails'
 gem 'sitemap_generator'
 gem "fog-aws"
-
-group :development do
-  gem 'browser_sync_rails'
-end

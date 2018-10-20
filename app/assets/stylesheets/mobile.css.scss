@@ -1,17 +1,36 @@
 @import 'variables';
 
 .m-main-container{
-margin-left: 100px;
+
+margin-left:20px;
+margin-right: 20px;
 .m-navigation{
   font-family: 'Untitled Sans';
-  color: $hx-grey;
-  font-size: .9em;
+  color: white;
+  font-size: 1.1em;
   list-style-type: none;text-transform: uppercase;
   margin-top: 50px;}
-a{text-decoration: none; color:$hx-grey;  cursor:url(new-fill.png) , pointer;}
-.m-logo{width: 220px;}
+a{text-decoration: none; color:white;  cursor:url(new-fill.png) , pointer;}
+.m-logo{
+#heterodox-logo{width:200px;}
+display: grid;
+align-items:end;
+grid-template-columns: 70% 30%;
+#hamburger{width: 20px;}
+.hamburger{justify-self: end;}
+#closing  {width: 15px;}
+.closing  {justify-self: end;}
+}
+.nav-items{margin-top: 50px; border-top: 1px solid white;}
+.nav-items > *{
+padding-top: 15px;
+padding-bottom: 15px;
+border-bottom: 1px solid white;
 
+}
 
+}
 
-
+.m-projects a{
+  border-bottom:none;
 }

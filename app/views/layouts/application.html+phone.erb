@@ -18,7 +18,9 @@
 
   <body>
   <div class="m-main-container">
+
   <div class="m-navigation">
+
         <div class="m-logo">
 
 
@@ -35,11 +37,13 @@
           <p class="white-bg"><%=t("subtitle.lign2_html")%></p>
          </div>
 
+         <div class="hamburger"> <%= inline_svg 'hamburger.svg' , id: 'hamburger'%></div>
+         <div class="closing hidden"> <%= inline_svg 'closing.svg' , id: 'closing'%></div>
+
         </div>
           <div class="nav-items">
-          <div></div>
           <div><%= link_to t("nav.about") , about_path , class:"bigger" , id:"big-left"%></div>
-          <div class="projects"><%= link_to t("nav.projects"), projects_path , class:"bigger" %></div>
+          <div class="m-projects"><%= link_to t("nav.projects"), projects_path , class:"bigger" %></div>
           <div><%= link_to "contact" , contact_path , class:"bigger" %></div>
           <div>
           <%= link_to "eng" , url_for( :locale => 'en' ) ,class:"bigger" %> | <%= link_to "fr" ,  url_for( :locale => 'fr' ) ,class:"bigger" %> </div>

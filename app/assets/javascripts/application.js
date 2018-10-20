@@ -23,6 +23,9 @@ console.log("fire!")
 
 });
 
+
+
+
 $( document ).on('turbolinks:load', function() {
     window.onload = $(function(){
         var current = window.location.pathname + window.location.search + window.location.hash;
@@ -45,15 +48,24 @@ $( document ).on('turbolinks:load', function() {
   };
 
 
-  var currentURL = (document.URL); 
+  var currentURL = (document.URL);
   var part = currentURL.split("/")[5];
   console.log(part);
   console.log(currentURL);
 
   if (part){$(".projects a").addClass('active');}
-         
+
         })
     })
 
+  $('.hamburger').click(function(){
+  $(this).addClass("hidden")
+  $(".closing").removeClass("hidden")
+  });
+
+  $('.closing').click(function(){
+  $(this).addClass("hidden")
+  $(".hamburger").removeClass("hidden")
+  });
 
   });
