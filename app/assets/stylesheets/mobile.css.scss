@@ -21,7 +21,7 @@ grid-template-columns: 70% 30%;
 #closing  {width: 15px;}
 .closing  {justify-self: end;}
 }
-.nav-items{margin-top: 50px; border-top: 1px solid white;}
+.nav-items{margin-top: 50px; border-top: 1px solid white; display: none;}
 .nav-items > *{
 padding-top: 15px;
 padding-bottom: 15px;

@@ -61,11 +61,14 @@ $( document ).on('turbolinks:load', function() {
   $('.hamburger').click(function(){
   $(this).addClass("hidden")
   $(".closing").removeClass("hidden")
+  $(".nav-items").slideDown(400)
   });
 
   $('.closing').click(function(){
   $(this).addClass("hidden")
   $(".hamburger").removeClass("hidden")
+  $(".nav-items").slideUp(400)
+
   });
 
   });
