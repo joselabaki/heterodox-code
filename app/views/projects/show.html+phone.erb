@@ -50,31 +50,13 @@
 </div><!-- signup form-->
 </div><!-- signup-->
 
-<div class="inav">
-    <div class="iprev">
-      <%if @project.previous%>
-      <%= link_to @project.previous do %>
+<div class="horizontal">
+  <% @projects.each do |project| %>
 
-        <div class="iprev-name"><%= @project.previous.title%></div>
-        <div class="iprev-arrow"><%= inline_svg "Next-arrow.svg" %></div>
-        <%end%>
-        <% end%>
-    </div><!--prev-->
-    <div class="icenter">
-      <div class="centre-symbol"><%=image_tag ("new-fill.png")%></div>
-    </div>
+  <div class="hori-pro"><%= project.title %></div>
 
-
-    <div class="inext">
-      <%= link_to @project.next do %>
-
-      <% if  @project.next %>
-      <div class="inext-name"><%= @project.next.title%></div>
-      <div class="inext-arrow"><%= inline_svg "Next-arrow.svg" %></div>
-      <% end %>
-      <% end %>
-    </div>
-</div><!-- inav -->
+<%end%>
+</div>
 
 
 <script>

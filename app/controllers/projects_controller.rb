@@ -36,6 +36,7 @@ before_action :authenticate_user! , except: [:show , :index]
 
 
   def show
+    @projects = Project.all
     @project = Project.friendly.find(params[:id])
   end
 
