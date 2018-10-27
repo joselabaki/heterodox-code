@@ -53,8 +53,9 @@
 <div class="horizontal">
   <% @projects.each do |project| %>
 
+  <%= link_to project_path(project) do %>
   <div class="hori-pro"><%= project.title %></div>
-
+<% end %>
 <%end%>
 </div>
 

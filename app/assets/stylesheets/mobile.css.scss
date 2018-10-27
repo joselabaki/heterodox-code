@@ -83,20 +83,19 @@ border-bottom: 1px dotted $hx-grey;
 
 .horizontal {
   margin-top: 70px;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+   overflow-y: hidden;
+   white-space: nowrap;
   &::-webkit-scrollbar {
-    display: none;
-  }
+    display: none;}
+a{
+.hori-pro{
+  display: inline-block;
+  color: white;
+  font-family: "Untitled Sans";
+  font-size: 17px;
+  padding: 30px;
 
+}}}
 
-  .hori-pro {
-    flex: 0 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
-
-.hori-pro:first-child{padding-left: 0px;}
+.horizontal{a{&:first-child{.hori-pro{margin-left: 0px; padding-left: 0px;}}}}
