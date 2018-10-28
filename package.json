@@ -1,8 +1,0 @@
-{
-  "name": "heterodox-code",
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^2.26.3"
-  }
-}

@@ -77,3 +77,4 @@ gem 'browser'
 gem 'jquery-rails'
 gem 'sitemap_generator'
 gem "fog-aws"
+gem "autoprefixer-rails"

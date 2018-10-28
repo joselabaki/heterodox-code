@@ -13,26 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
 .active{
   border-bottom: 1px solid white;
 }
  @import 'variables';
-
- @media screen and (min-width: 1400px) {
-    .main-container {
-      width: 1470px;
-    }
-  }
-  @media screen and (min-width: 1600px) {
-    .main-container {
-      width: 1670px;
-    }
-  }
-  @media screen and (min-width: 1900px) {
-    .main-container {
-      width: 1970px;
-    }
-  }
 
  html{height: 100%;}
  body{
@@ -44,21 +29,6 @@
 
     }
 
- @font-face {
-    font-family: 'Untitled Sans';
-    src:font-url('UntitledSansWeb.ttf');
-
-}
-
-@font-face {
-    font-family: 'Untitled Serif';
-    src:font-url('UntitledSerifWeb.otf');
-}
-
-@font-face {
-  font-family: 'Serif Italic';
-    src:font-url('Renamed.ttf');
-}
 
 .footer{
   height: 90px;
