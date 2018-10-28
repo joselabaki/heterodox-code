@@ -40,3 +40,5 @@ fr:
     subscribe: "S'abonner"
   error:
     back: "retour à l'accueil"
+  fixed:
+    home: "projets"

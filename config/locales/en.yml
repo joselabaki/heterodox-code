@@ -35,3 +35,5 @@ en:
     subscribe: "Subscribe"
   error:
     back: "back to homepage"
+  fixed:
+    home: "all projects"

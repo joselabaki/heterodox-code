@@ -91,11 +91,45 @@ border-bottom: 1px dotted $hx-grey;
 a{
 .hori-pro{
   display: inline-block;
-  color: white;
+  color: $hx-grey;
   font-family: "Untitled Sans";
   font-size: 17px;
   padding: 30px;
+  text-transform: capitalize;
 
 }}}
 
 .horizontal{a{&:first-child{.hori-pro{margin-left: 0px; padding-left: 0px;}}}}
+.horizontal{a{&:last-child{.hori-pro{margin-right: 60px; }}}}
+
+.prodots{
+  margin-top: -20px;
+  display: flex; flex-direction: row;  justify-content: center;}
+.dot{
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: $hx-grey;
+  margin: 5px;
+}
+
+
+.no-scroll {
+position:fixed;
+margin: 0 auto;
+bottom:0px;
+left:0px;
+right:0px;
+width:100%;
+color: white;
+background-color: black;
+// height: 30px;
+align-items: center;
+border-top:1px dotted $hx-grey;
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: 50px;
+.tiny-arrow{justify-self:end; padding-right: 40px;}
+#tiny-arrow{height: 8px}
+.fixed-accueil{font-family: "Untitled Sans";font-size: 17px; a{color: $hx-grey}; margin-left: 20px;}
+}

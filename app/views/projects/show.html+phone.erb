@@ -52,13 +52,30 @@
 
 <div class="horizontal">
   <% @projects.each do |project| %>
-
   <%= link_to project_path(project) do %>
   <div class="hori-pro"><%= project.title %></div>
 <% end %>
 <%end%>
+
+
 </div>
 
+<div class="prodots">
+  <% @projects.each do%>
+  <div class="dot"></div>
+<% end%>
+</div>
+
+
+<div class="no-scroll">
+<div class="fixed-accueil"><%=link_to t("fixed.home"), projects_path, id: "fixed-home" %></div>
+<div class="tiny-arrow">
+<%= link_to anchor:"anchor" do %>
+<%= inline_svg "tiny-arrow.svg", id: "tiny-arrow" %>
+<%end%>
+</div>
+
+</div>
 
 <script>
 <% @project.images.each do |i| %>
