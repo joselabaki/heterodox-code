@@ -58,7 +58,10 @@ $( document ).on('turbolinks:load', function() {
 
 
 
-
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#big-left').removeClass("active")
+    $('.bigger').removeClass("active")
+  }
 
 
 
