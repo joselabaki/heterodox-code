@@ -50,21 +50,7 @@
 </div><!-- signup form-->
 </div><!-- signup-->
 
-<div class="horizontal">
-  <% @projects.each do |project| %>
-  <%= link_to project_path(project) do %>
-  <div class="hori-pro"><%= project.title %></div>
-<% end %>
-<%end%>
 
-
-</div>
-
-<div class="prodots">
-  <% @projects.each do%>
-  <div class="dot"></div>
-<% end%>
-</div>
 
 
 <div class="no-scroll">
