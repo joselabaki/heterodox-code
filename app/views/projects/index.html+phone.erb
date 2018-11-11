@@ -1,6 +1,6 @@
 
  <% provide(:title, t("title.projects")) %>
- 
+
 <div class="m-all-projects">
   <% @projects.each do |project| %>
     <div class="p-index">
@@ -8,7 +8,7 @@
         <div class="p-toggle <%= project.id %>">
         <div class="abstract-container hidden ">
         <div class="stripes">
-          <div class="text-inside"><div class="m-p-text "><p><%= raw project.abstract %></p></div></div>
+        <div class="m-p-text "><p><%= raw project.abstract %></p></div>
           <div class="p-button "><%= link_to t("read-lire"), project_path(project) %></div>
           </div>
         </div>
