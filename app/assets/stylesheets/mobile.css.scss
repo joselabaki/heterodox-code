@@ -1,37 +1,51 @@
 @import 'variables';
 
-.m-main-container{
-margin-left:20px;
-margin-right: 20px;
-
 .m-navigation{
   font-family: 'Untitled Sans';
   color: $hx-grey;
   font-size: 1em;
   list-style-type: none;text-transform: uppercase;
-  margin-top: 50px;
+  position:fixed;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom:10px;
+
+  top:0px;
+  left:0px;
+  right:0px;
+  width:90%;
+  position: fixed;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+    a{text-decoration: none; color:$hx-grey;  cursor:url(new-fill.png) , pointer;}
+  .m-logo{
+  display: grid;
+  align-items:end;
+  grid-template-columns: 70% 30%;
+  #heterodox-logo{width:200px;}
+  #hamburger{width: 20px;}
+  .hamburger{justify-self: end;}
+  #closing  {width: 15px;}
+  .closing  {justify-self: end;}
+  }
+  .m-lang >*{border: none; padding-right:5px; }
+  .m-bigger{padding-left: 5px;}
+  .nav-items{margin-top: 50px; display: none;}
+  .nav-items > *{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted $hx-grey;
+
+  }
+
 }
 
-  a{text-decoration: none; color:$hx-grey;  cursor:url(new-fill.png) , pointer;}
-.m-logo{
-display: grid;
-align-items:end;
-grid-template-columns: 70% 30%;
-#heterodox-logo{width:200px;}
-#hamburger{width: 20px;}
-.hamburger{justify-self: end;}
-#closing  {width: 15px;}
-.closing  {justify-self: end;}
-}
-.m-lang >*{border: none; padding-right:5px; }
-.m-bigger{padding-left: 5px;}
-.nav-items{margin-top: 50px; display: none;}
-.nav-items > *{
-padding-top: 15px;
-padding-bottom: 15px;
-border-bottom: 1px dotted $hx-grey;
-
-}
+.m-main-container{
+margin-left:20px;
+margin-right: 20px;
 
 }
 
@@ -58,7 +72,7 @@ border-bottom: 1px dotted $hx-grey;
 /////// ALL Projects /////
 
 .m-all-projects {
-    margin-top: 70px;
+    margin-top: 100px;
 
 }
 
@@ -131,5 +145,5 @@ grid-template-columns: 1fr 1fr;
 height: 50px;
 .tiny-arrow{justify-self:end; padding-right: 40px;}
 #tiny-arrow{height: 8px}
-.fixed-accueil{font-family: "Untitled Sans";font-size: 17px; a{color: $hx-grey}; margin-left: 20px;}
+.fixed-accueil{font-family: "Untitled Sans";font-size: 17px; a{color: $hx-grey; text-decoration: none;}; margin-left: 20px;}
 }
