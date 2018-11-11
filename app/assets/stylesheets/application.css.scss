@@ -38,6 +38,15 @@
     margin: 0 auto;
 }
 .navigation{
+    width: 1200px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top:0px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    background-color: black;
+    position: fixed;
     font-family: 'Untitled Sans';
     color: $hx-grey;
     font-size: .9em;
@@ -45,7 +54,6 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: end;
     list-style-type: none;text-transform: uppercase;
-    margin-top: 50px;
 
     a{text-decoration: none; color:$hx-grey;  cursor:url(new-fill.png) , pointer;
 }
