@@ -27,12 +27,6 @@ ActiveRecord::Schema.define(version: 2018_10_06_172418) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
   end
 
-  create_table "leads", force: :cascade do |t|
-    t.string "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "project_translations", force: :cascade do |t|
     t.integer "project_id", null: false
     t.string "locale", null: false
@@ -53,6 +47,7 @@ ActiveRecord::Schema.define(version: 2018_10_06_172418) do
     t.string "images", default: [], array: true
     t.text "abstract"
     t.string "attachment"
+    t.index ["slug"], name: "index_projects_on_slug"
   end
 
   create_table "users", force: :cascade do |t|
