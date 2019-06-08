@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2018_10_06_172418) do
   end
 
   create_table "project_translations", force: :cascade do |t|
-    t.integer "project_id", null: false
+    t.bigint "project_id", null: false
     t.string "locale", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
