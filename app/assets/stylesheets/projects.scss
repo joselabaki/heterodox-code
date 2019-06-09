@@ -14,12 +14,25 @@ margin-top: 40px;
 }
 
 .p-title{
-    font-family: "Untitled Serif";
-    text-transform: capitalize;
-    font-size: 1.3em;
+    font-family: "Untitled Sans";
+    font-size: 1.15em;
     color: white;
     cursor:url(new-fill.png) , pointer;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
 
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ffffff;
+justify-self:end;
+margin-right: 10px;
 }
 
 
@@ -31,13 +44,16 @@ margin-top: 40px;
     margin-top: 8px;
     font-family: "Untitled Sans";
     text-transform: none;
-    font-size: .8em;
+    font-size: .9em;
     color:white;
 
     p{
     display: inline;
     background-color:black;
     box-decoration-break: clone;
+    padding: 5px;
+    padding-right: 9px;
+    line-height: 1.8;
     }
 
 }
