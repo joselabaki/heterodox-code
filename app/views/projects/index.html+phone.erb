@@ -4,7 +4,7 @@
 <div class="m-all-projects">
   <% @projects.each do |project| %>
     <div class="p-index">
-      <div class ="p-title <%= project.title.parameterize %>" > <%= project.title %></div><hr>
+      <div class ="p-title <%= project.title.parameterize %>" ><div> <%= project.title %></div><div class="arrow-down"></div></div><hr>
         <div class="p-toggle <%= project.id %>">
         <div class="abstract-container hidden ">
         <div class="stripes">

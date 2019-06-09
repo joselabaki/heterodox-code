@@ -144,3 +144,46 @@ height: 50px;
 #tiny-arrow{height: 8px}
 .fixed-accueil{font-family: "Untitled Sans";font-size: 17px; a{color: $hx-grey; text-decoration: none;}; margin-left: 20px;}
 }
+
+
+////////////signup-form////////
+
+.m-signup-form{
+  width:280px;
+  display: grid;
+  position: absolute;
+  margin-top: 20px;
+  background-color: black;
+  font-family: "Untitled Sans";
+  color: white;
+  box-shadow: 0px 0px 15px 4px white;
+  padding: 20px;
+//  grid-template-columns: 1fr 1fr 1fr;
+.popup-head{
+  width: 100%;
+//  background-color: yellow;
+font-size: .85em;
+  display: grid;
+ grid-template-columns: 90% auto;
+ align-items: center;
+}
+.popup-close{display: grid; cursor:url('new-fill.png') , pointer;
+  align-items: end;
+  justify-items:end;
+  svg{width: 10px;}}
+
+input{
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-family: "Untitled Sans";
+  border-radius: 0px;
+  border-style: solid;}
+  .email{cursor: url('typetool.png'), text;}
+.button{
+  background-color: white;
+  color: black;
+  text-transform: lowercase;
+  cursor:url('new-fill.png') , pointer;
+}
+}
