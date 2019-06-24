@@ -11,7 +11,7 @@ def should_generate_new_friendly_id?
 
 
     validates :title, :abstract , presence: true
-    translates :title , :text , :abstract
+    translates :title , :text 
 
     def next
       Project.where("id > ?", id).limit(1).first
