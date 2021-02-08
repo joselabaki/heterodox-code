@@ -72,7 +72,7 @@ gem 'devise'
 
 gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem "mini_magick"
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'browser'
 gem 'jquery-rails'
 gem 'sitemap_generator'
